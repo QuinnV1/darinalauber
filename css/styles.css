@@ -1,3 +1,7 @@
+/* *{ 
+ box-sizing:border-box; 
+ outline: 1px solid limegreen !important; 
+} */
 body {
     font-family: 'Inter', Arial, sans-serif;
     margin: 0;
@@ -347,7 +351,7 @@ h2 {
     margin: 28px auto 25px auto;
 }
 
-.swiper-slide {
+/* .swiper-slide {
     display: flex !important;
     flex-direction: column;
     justify-content: flex-end;
@@ -363,7 +367,7 @@ h2 {
     min-width: 314px;
     overflow: hidden;
     transition: box-shadow .21s;
-}
+} */
 
 .swiper-slide .role-title {
     background: rgba(0, 0, 0, 0.41) !important;
