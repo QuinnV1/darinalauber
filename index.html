@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Тест — Дарина Лаубер</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+<body>
+    <div class="brand-test-wrap">
+        <div class="brand-test-header">
+            <div class="brand-marker">Тест на роль</div>
+            <h1>Проверь свою <span class="brand-accent">роль</span> в личном бренде</h1>
+            <p class="brand-lead">Отмечай все подходящие варианты для каждого вопроса.</p>
+        </div>
+        <div class="test-tabs">
+            <button class="tab-btn active" onclick="switchTest(0)">Тест 1: Идеального Я</button>
+            <button class="tab-btn" onclick="switchTest(1)">Тест 2: Родительская фигура</button>
+            <button class="tab-btn" onclick="switchTest(2)">Тест 3: АльтерЭго</button>
+            <button class="tab-btn" onclick="switchTest(3)">Тест 4: Тень</button>
+        </div>
+        <div class="test-card">
+            <div id="quizStage" class="card-animate"></div>
+        </div>
+    </div>
+    <script src="quiz.js"></script>
+    <script src="quiz-swiper.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</body>
+</html>
