@@ -118,8 +118,8 @@ function renderSwiperResult(resultData) {
 	setTimeout(() => {
 		// Подбор параметров по ширине экрана
 		let offset =
-			window.innerWidth < 600 ? 1 : window.innerWidth < 900 ? 15 : 15	
-		let rotate = window.innerWidth < 600 ? 3 : window.innerWidth < 900 ? 15 : 15
+			window.innerWidth < 600 ? 1 : window.innerWidth < 900 ? 10 : 10	
+		let rotate = window.innerWidth < 600 ? 3 : window.innerWidth < 900 ? 7 : 7
 		new Swiper('.mySwiper', {
 			effect: 'cards',
 			grabCursor: true,
