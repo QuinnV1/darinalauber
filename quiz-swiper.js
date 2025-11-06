@@ -107,20 +107,27 @@ function renderSwiperResult(resultData) {
       <div style="font-size:1.02rem; color:#161616; margin:13px 0 9px 0; font-weight:600;">
         <span style="color:#fa7e0a; font-weight:700;">Скопируйте отчёт и пишите мне в ЛС 👇</span>
       </div>
-      <button class="btn" onclick="copyResults()" id="copyBtn" style="margin-bottom:11px;">Скопировать ваши результаты</button><br>
+      
       <a href="https://t.me/DarinaLauber" target="_blank" rel="noopener"
          style="display:inline-block; text-decoration:none;">
         <button class="btn btn-main" style="font-size:1.13rem;letter-spacing:0.03em;margin-top:8px;">Написать в Telegram</button>
       </a>
     </div>
   `)
-
+	// <button class="btn" onclick="copyResults()" id="copyBtn" style="margin-bottom:11px;">Скопировать ваши результаты</button><br></br>
 	setTimeout(() => {
+		// Подбор параметров по ширине экрана
+		let offset =
+			window.innerWidth < 600 ? 1 : window.innerWidth < 900 ? 15 : 15	
+		let rotate = window.innerWidth < 600 ? 3 : window.innerWidth < 900 ? 15 : 15
 		new Swiper('.mySwiper', {
 			effect: 'cards',
 			grabCursor: true,
-			initialSlide: 1,
-			// cardsEffect: {},
+			initialSlide: 0,
+			cardsEffect: {
+				perSlideOffset: offset,
+				perSlideRotate: rotate,
+			},
 			observer: true,
 			observeParents: true,
 		})

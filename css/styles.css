@@ -437,26 +437,26 @@ h2 {
     }
 
     .swiper-slide .role-desc {
-        font-size: 13px;
+        font-size: 14px !important;
         min-height: 38px;
         padding: 9px 8px 7px 10px;
     }
 
     .swiper-slide .role-title {
-        font-size: 1rem;
+        font-size: 1rem !important;
         padding: 10px 13px 4px 12px;
     }
 }
 
-@media (max-width:400px) {
+@media (max-width:420px) {
     .swiper {
-        width: 240px;
-        height: 296px;
-        margin-bottom: 100px;
+        width: 265px;
+        height: 446px;
+        margin-bottom: 5px;
     }
 
     .swiper-slide .role-desc {
-        font-size: 13px;
+        font-size: 14px !important;
         min-height: 38px;
         padding: 9px 8px 7px 10px;
     }
